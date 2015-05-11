@@ -11,12 +11,27 @@
 
     <TextView
         android:id="@+id/tvQuote"
+        tools:text="this is a quote"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
 
     <TextView
         android:id="@+id/tvAuthor"
+        tools:text="author"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuote"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zen Me Again"
+        android:id="@+id/btAgain"
+        android:onClick="zenAgain"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
 
 </RelativeLayout>
