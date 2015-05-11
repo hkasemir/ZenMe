@@ -24,9 +24,10 @@ public class ZenActivity extends ActionBarActivity {
 
         try {
             String json = null;
-            InputStream is = getAssets().open("test.json");
+            InputStream is = getAssets().open("quotes.json");
             int size = is.available();
             byte[] buffer = new byte[size];
+            is.read(buffer);
             is.close();
             json = new String(buffer, "UTF-8");
 
