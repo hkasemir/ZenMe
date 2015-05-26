@@ -1,17 +1,11 @@
 package name.heidik.zenme;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.Fade;
-import android.transition.Transition;
-import android.transition.TransitionManager;
 import android.util.Log;
 import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextSwitcher;
@@ -38,8 +32,6 @@ public class ZenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
 
 
 
@@ -100,16 +92,10 @@ public class ZenActivity extends AppCompatActivity {
         tvAuthor.setOutAnimation(out);
 
 
-
-
-
         tvAuthor.setText(quotes.get(quoteIndex).author);
         tvQuote.setText(quotes.get(quoteIndex).quote);
 
     }
-
-
-
 
 
     public void zenAgain(View v) {
